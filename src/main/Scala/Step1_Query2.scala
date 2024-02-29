@@ -2,9 +2,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 object Step1_Query2 {
-
     def main(args: Array[String]): Unit = {
-
       val sparConf = new SparkConf().setMaster("local").setAppName("Query2")
       val sc = new SparkContext(sparConf)
       val peopleRDD = sc.textFile("data/PEOPLE-large")
