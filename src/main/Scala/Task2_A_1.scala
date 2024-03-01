@@ -31,7 +31,7 @@ object Task2_A_1 {
 
     val t1 = spark.sql("SELECT * FROM purchasesT WHERE TransTotal > 600")
 
-    t1.coalesce(1).write.option("header",true).csv("src/main/data/output/T1.csv")
+    t1.coalesce(1).write.option("header",true).csv("data/T1.csv")
 
     t1.show()
 
