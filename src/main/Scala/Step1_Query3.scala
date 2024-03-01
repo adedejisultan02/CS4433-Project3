@@ -1,6 +1,6 @@
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Query3 {
+object Step1_Query3 {
 
   def main(args: Array[String]): Unit = {
 
